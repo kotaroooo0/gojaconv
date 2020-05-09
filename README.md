@@ -3,7 +3,7 @@
 ## 日本語変換package
 
 - かな -> ローマ字(ヘボン式)
-  - ToHebon(string) string
+  - `ToHebon(string) string`
 
 ## Install
 
