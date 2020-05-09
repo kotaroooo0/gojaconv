@@ -23,11 +23,7 @@ func ToHebon(kana string) string {
 			// "っち"
 			nextCh := charHebonByIndex(kana, i+1)
 			if nextCh.Hebon != "" {
-				if strings.Index(nextCh.Hebon, "ch") == 0 {
-					ch.Hebon = "t"
-				} else {
-					ch.Hebon = nextCh.Hebon[0:1]
-				}
+				ch.Hebon = "t"
 			}
 		} else if ch.Char == "ん" {
 			// B,M,P の前の "ん" は "M" とする。
