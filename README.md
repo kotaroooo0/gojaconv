@@ -1,6 +1,6 @@
 # gojaconv
 
-## 日本語変換ライブラリ
+## 日本語変換package
 
 - かな -> ローマ字(ヘボン式)
   - ToHebon(string) string
