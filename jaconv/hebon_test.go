@@ -14,6 +14,9 @@ func TestToHebon(t *testing.T) {
 		{hiragana: "みょうこうすぎのはら", hebon: "myokosuginohara"},
 		{hiragana: "たかすすのーぱーく", hebon: "takasusunopaku"},
 		{hiragana: "GALAゆざわ", hebon: "GALAyuzawa"},
+		{hiragana: "ごんどら", hebon: "gondora"},
+		{hiragana: "ろっち", hebon: "rotchi"},
+		{hiragana: "こんび", hebon: "kombi"},
 	}
 	for _, tt := range cases {
 		act := ToHebon(tt.hiragana)
