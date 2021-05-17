@@ -1,7 +1,6 @@
 package jaconv
 
 import (
-	"strings"
 	"unicode/utf8"
 
 	"golang.org/x/exp/utf8string"
@@ -26,13 +25,8 @@ func ToNippon(kana string) string {
 				ch.Nippon = "t"
 			}
 		} else if ch.Char == "ん" {
-			// B,M,P の前の "ん" は "M" とする。
-			nextCh := charNipponByIndex(kana, i+1)
-			if nextCh.Nippon != "" && strings.Index("bmp", nextCh.Nippon[0:1]) != -1 {
-				ch.Nippon = "m"
-			} else {
-				ch.Nippon = "n"
-			}
+			// 後続の文字に無関係にnを用いる
+			ch.Nippon = "n"
 		} else if ch.Char == "ー" {
 			// 長音は無視
 			ch.Nippon = ""

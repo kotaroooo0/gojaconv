@@ -16,7 +16,7 @@ func TestToNippon(t *testing.T) {
 		{hiragana: "GALAゆざわ", nippon: "GALAyuzawa"},
 		{hiragana: "ごんどら", nippon: "gondora"},
 		{hiragana: "ろっち", nippon: "rotti"},
-		{hiragana: "こんび", nippon: "kombi"},
+		{hiragana: "こんび", nippon: "konbi"},
 		{hiragana: "じゃりみち", nippon: "zyarimiti"},
 	}
 	for _, tt := range cases {
