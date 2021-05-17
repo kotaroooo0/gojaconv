@@ -1,4 +1,4 @@
-module github.com/kotaroooo0/gojaconv
+module github.com/rmanzoku/gojaconv
 
 go 1.13
 
